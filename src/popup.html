@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css"><title>API.SH</title></head>
+<body>
+<header><img src="../icons/icon32.png" alt=""><b>API.SH</b><span class="mono muted small">&gt;_ web data as JSON</span><span class="sp"></span><a href="options.html" target="_blank">settings</a></header>
+<main>
+  <div id="nokey" class="hide"><p>Add your API.SH key to start.</p><p class="small muted">Get a free key with <span id="freecr">free credits every month</span> at <a href="https://api.sh" target="_blank" style="color:var(--y)">api.sh</a>.</p><button id="openOpts">Add API key</button></div>
+  <div id="app" class="hide">
+    <div class="plat"><img id="plogo" alt=""><span id="ptitle" class="mono"></span><span class="sp"></span><span id="pchip" class="chip"></span></div>
+    <label for="plat">Platform</label><select id="plat"></select>
+    <label for="ep">Endpoint</label><select id="ep"></select>
+    <div id="params"></div>
+    <div class="row"><button id="run">Get data</button><button id="copy" class="ghost" disabled>Copy JSON</button><button id="json" class="ghost" disabled>.json</button><button id="csv" class="ghost" disabled>.csv</button></div>
+    <div id="status" class="small muted" style="margin-top:8px"></div>
+    <pre id="out" class="hide"></pre>
+  </div>
+</main>
+<script src="popup.js" type="module"></script>
+</body></html>

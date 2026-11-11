@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "API.SH: Web Data to JSON",
+  "short_name": "API.SH",
+  "version": "0.2.1",
+  "description": "Turn the page you're on into clean JSON or CSV: profiles, posts, products, listings and more from around 1,000 popular websites.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "API.SH",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "options_page": "src/options.html",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.api.sh/*"
+  ],
+  "homepage_url": "https://api.sh"
+}

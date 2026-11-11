@@ -1,0 +1,19 @@
+:root{--bg:#0B0D0C;--panel:#141716;--line:#262a28;--ink:#ECEDEA;--mute:#9AA09C;--y:#F5C542;--yh:#FFE08A;--err:#ff7a6b;--ok:#7bd88f;font:13px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);width:400px;min-height:200px;overflow-x:hidden}
+html{overflow-x:hidden}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#2c302e;border-radius:4px}::-webkit-scrollbar-track{background:transparent}
+.mono{font-family:ui-monospace,"JetBrains Mono",SFMono-Regular,Menlo,monospace}
+header{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}
+header img{width:22px;height:22px;border-radius:5px}header b{font-family:ui-monospace,Menlo,monospace;letter-spacing:.5px}
+header .sp{flex:1}header a{color:var(--mute);text-decoration:none;font-size:12px}header a:hover{color:var(--y)}
+main{padding:12px}.muted{color:var(--mute)}.small{font-size:12px}
+label{display:block;font-size:12px;color:var(--mute);margin:10px 0 4px}
+select,input{width:100%;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:7px 8px;font:inherit}
+select:focus,input:focus{outline:none;border-color:var(--y)}
+button{background:var(--y);color:#0B0D0C;border:0;border-radius:6px;padding:8px 12px;font-weight:600;cursor:pointer;font:inherit;font-weight:600}
+button:hover{background:var(--yh)}button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}button.ghost:hover{border-color:var(--y);color:var(--y)}
+button:disabled{opacity:.5;cursor:default}
+.row{display:flex;gap:8px;align-items:center;margin-top:12px}.row>*{flex:0 0 auto}.grow{flex:1 1 auto}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-size:11px;color:var(--mute)}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px;max-height:220px;overflow:auto;font:11.5px/1.4 ui-monospace,Menlo,monospace;white-space:pre-wrap;word-break:break-word;margin:10px 0 0}
+.err{color:var(--err)}.ok{color:var(--ok)}.hide{display:none}
+.plat{display:flex;align-items:center;gap:8px;margin-bottom:4px}.plat img{width:18px;height:18px;border-radius:4px;background:#fff}
